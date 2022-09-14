@@ -1,467 +1,288 @@
-<!DOCTYPE HTML>
-<!--
-	Photon by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Photon by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Header -->
-			<section id="header">
-				<div class="inner">
-					<span class="icon solid major fa-cloud"></span>
-					<h1>Hi, I'm <strong>Photon</strong>, another fine<br />
-					little freebie from <a href="http://html5up.net">HTML5 UP</a>.</h1>
-					<p>Accumsan feugiat mi commodo erat lorem ipsum, sed magna<br />
-					lobortis feugiat sapien sed etiam volutpat accumsan.</p>
-					<ul class="actions special">
-						<li><a href="#one" class="button scrolly">Discover</a></li>
-					</ul>
-				</div>
-			</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIS정보기술교육센터</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <style>
+        @font-face {
+          font-family: jejugothic;
+          src: url("img/JejuGothic.ttf");
+        }
+        *{margin: 0;padding: 0;}
+        nav{
+          opacity: 0.7;
+        }
+        nav a{ 
+          color:white !important;
+        }
+        .navbar-default {
+            background-color: #0f2e70;
+            border-color: #e7e7e7;
+        }
+        .navbar-brand{
+          position: absolute;
+          top: -10px !important;
+        }
+        .carousel-inner img{
+            width: 100%;
+            height: 700px !important;
+        }
+        .carousel-caption{
+          top:40%;
+          font-size: 30px;
+          font-family: jejugothic;
+        }
+        .carousel-caption h3{
+          font-size: 50px;
+        }
+        .item .carousel-caption h3{
+          color:#d8cdd8 !important;
+        }
+        .container h1, .container-fluid h1{
+          padding-top: 100px;
+          font-family: jejugothic;
+        }
+        @media screen and (max-width:768px) {
+          .carousel-caption{
+            top:35%;
+            font-size: 20px;
+          }
+          .carousel-caption h3{
+            font-size: 30px;
+          }   
+        }
+    </style>
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+      
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+      
+          // Prevent default anchor click behavior
+          event.preventDefault();
+      
+          // Store hash
+          var hash = this.hash;
+      
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function(){
+      
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+            });
+          } // End if
+        });
+      })
+      </script>
+</head>
+<body id="myPage">
+    <!-- Navigation ---------------------------------------------------------------------->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#myPage"><img src="img/logo.png" alt="로고" width="200"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#subject" data-toggle="collapse" data-target=".navbar-collapse.in">과정소개</a></li>
+            <li><a href="#community" data-toggle="collapse" data-target=".navbar-collapse.in">커뮤니티</a></li>
+            <li><a href="#maps" data-toggle="collapse" data-target=".navbar-collapse.in">오시는길</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation -->
 
-		<!-- One -->
-			<section id="one" class="main style1">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2>Lorem ipsum dolor adipiscing<br />
-								amet dolor consequat</h2>
-							</header>
-							<p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
-						</div>
-						<div class="col-6 col-12-medium imp-medium">
-							<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
-						</div>
-					</div>
-				</div>
-			</section>
+    <!-- Carousel ------------------------------------------------------------------------->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="img/pic01.jpg" alt="배경1">
+            <div class="carousel-caption">
+              <h3 class="animate__animated animate__slideInDown">직업능력개발 우수훈련기관 선정</h3>
+              <p>직업훈련의 품질을 높이고 일자리 창출에 앞장서는 교육기관이 되겠습니다.</p>
+            </div>
+          </div>
+      
+          <div class="item">
+            <img src="img/pic02.jpg" alt="배경2">
+            <div class="carousel-caption">
+              <h3 class="animate__animated animate__slideInDown">이수자평가 A등급 획득</h3>
+              <p>직업능력개발훈련 이수자평가에서 최우수 A등급을 획득하였습니다.</p>
+            </div>
+          </div>
+      
+          <div class="item">
+            <img src="img/pic03.jpg" alt="배경3">
+            <div class="carousel-caption">
+              <h3 class="animate__animated animate__slideInDown">4차산업혁명을 선도하는 IT 신기술교육의 메카</h3>
+              <p>최신IT기술 트렌드를 접목한 실무중심의 교육으로 대한민국 4차 산업혁명 시대의 미래를 열어가겠습니다.</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- Carousel -->
 
-		<!-- Two -->
-			<section id="two" class="main style2">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<ul class="major-icons">
-								<li><span class="icon solid style1 major fa-code"></span></li>
-								<li><span class="icon solid style2 major fa-bolt"></span></li>
-								<li><span class="icon solid style3 major fa-camera-retro"></span></li>
-								<li><span class="icon solid style4 major fa-cog"></span></li>
-								<li><span class="icon solid style5 major fa-desktop"></span></li>
-								<li><span class="icon solid style6 major fa-calendar"></span></li>
-							</ul>
-						</div>
-						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2>Lorem ipsum dolor adipiscing<br />
-								amet dolor consequat</h2>
-							</header>
-							<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
-							<p>Blandit faucibus proin. Ac aliquam integer adipiscing enim non praesent vis commodo nunc phasellus cubilia ac risus accumsan. Accumsan blandit. Lobortis phasellus non lobortis dit varius mi varius accumsan lobortis. Blandit ante aliquam lacinia lorem lobortis semper morbi col faucibus vitae integer placerat accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing curae consequat feugiat etiam dolore.</p>
-							<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
-						</div>
-					</div>
-				</div>
-			</section>
+    <!-- 과정소개 --------------------------------------------------------->
+    <div id="subject" class="container">
+        <h1 class="text-center">과정소개</h1>
+        <div class="row text-center">
+            <div class="col-sm-3">
+              <div class="thumbnail">
+                <img src="img/pic04.jpg" alt="Paris">
+                <p><strong>웹&앱 콘텐츠 융합 자바(JAVA) 응용SW 및 웹개발자 양성 과정</strong></p>
+                <p>교육기간 : 2022.09.19 ~ 2023.02.15 <br><span class="red">(5개월/900시간)</span></p>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="thumbnail">
+                <img src="img/pic05.jpg" alt="New York">
+                <p><strong>New York</strong></p>
+                <p>Sat. 28 November 2015</p>
+                <button class="btn">Buy Tickets</button>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="thumbnail">
+                <img src="img/pic06.jpg" alt="San Francisco">
+                <p><strong>San Francisco</strong></p>
+                <p>Sun. 29 November 2015</p>
+                <button class="btn">Buy Tickets</button>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="thumbnail">
+                <img src="img/pic07.jpg" alt="San Francisco">
+                <p><strong>San Francisco</strong></p>
+                <p>Sun. 29 November 2015</p>
+                <button class="btn">Buy Tickets</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- 과정소개-->
 
-		<!-- Three -->
-			<section id="three" class="main style1 special">
-				<div class="container">
-					<header class="major">
-						<h2>Adipiscing amet consequat</h2>
-					</header>
-					<p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
-					<div class="row gtr-150">
-						<div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
-							<h3>Magna feugiat lorem</h3>
-							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-							<ul class="actions special">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</div>
-						<div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
-							<h3>Magna feugiat lorem</h3>
-							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-							<ul class="actions special">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</div>
-						<div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<h3>Magna feugiat lorem</h3>
-							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-							<ul class="actions special">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
+    <!-- 커뮤니티 -------------------------------------------------------->
+    <div id="community" class="container">
+      <h1 class="text-center">커뮤니티</h1>
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">교육센터 소식</a></li>
+        <li><a data-toggle="tab" href="#menu1">자주묻는질문</a></li>
+        <li><a data-toggle="tab" href="#menu2">서식자료실</a></li>
+      </ul>
 
-		<!-- Four -->
-			<section id="four" class="main style2 special">
-				<div class="container">
-					<header class="major">
-						<h2>Ipsum feugiat consequat?</h2>
-					</header>
-					<p>Sed lacus nascetur ac ante amet sapien.</p>
-					<ul class="actions special">
-						<li><a href="#" class="button wide primary">Sign Up</a></li>
-						<li><a href="#" class="button wide">Learn More</a></li>
-					</ul>
-				</div>
-			</section>
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+          <h3>교육센터 소식</h3>
+          <ul class="list-group">
+            <li class="list-group-item">7월 20일(수) 개강하는 취업연수과정 OT(오리엔테이션) 안내입니다.</li>
+            <li class="list-group-item">2022년도 데이터 자격검정 시험일정입니다.</li>
+            <li class="list-group-item">스텝(STEP) 학습시 주의사항</li>
+          </ul>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+          <h3>자주묻는질문</h3>
+          <ul class="list-group">
+            <li class="list-group-item">7월 20일(수) 개강하는 취업연수과정 OT(오리엔테이션) 안내입니다.</li>
+            <li class="list-group-item">2022년도 데이터 자격검정 시험일정입니다.</li>
+            <li class="list-group-item">스텝(STEP) 학습시 주의사항</li>
+          </ul>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+          <h3>서식자료실</h3>
+          <ul class="list-group">
+            <li class="list-group-item">7월 20일(수) 개강하는 취업연수과정 OT(오리엔테이션) 안내입니다.</li>
+            <li class="list-group-item">2022년도 데이터 자격검정 시험일정입니다.</li>
+            <li class="list-group-item">스텝(STEP) 학습시 주의사항</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 커뮤니티 -->
 
-		<!-- Five -->
-		<!--
-			<section id="five" class="main style1">
-				<div class="container">
-					<header class="major special">
-						<h2>Elements</h2>
-					</header>
+    <!-- 오시는 길 -------------------------------------------------->
+    <div id="maps" class="container-fluid" style="margin: 0 !important;padding:0 !important;">
+      <h1 class="text-center">오시는 길</h1>
+      <div id="map" style="width:100%;height:500px;"></div>
 
-					<section>
-						<h4>Text</h4>
-						<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-						<hr />
-						<header>
-							<h4>Heading with a Subtitle</h4>
-							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-						</header>
-						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-						<header>
-							<h5>Heading with a Subtitle</h5>
-							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-						</header>
-						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-						<hr />
-						<h2>Heading Level 2</h2>
-						<h3>Heading Level 3</h3>
-						<h4>Heading Level 4</h4>
-						<h5>Heading Level 5</h5>
-						<h6>Heading Level 6</h6>
-						<hr />
-						<h5>Blockquote</h5>
-						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-						<h5>Preformatted</h5>
-						<pre><code>i = 0;
+      <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2f0bb35932325e9049074ab790afaa8f"></script>
+      <script>
+      var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+          mapOption = { 
+              center: new kakao.maps.LatLng(37.5251957, 126.8913598), // 지도의 중심좌표
+              level: 3 // 지도의 확대 레벨
+          };
 
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
+      var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-					</section>
+      // 마커가 표시될 위치입니다 
+      var markerPosition  = new kakao.maps.LatLng(37.5251957, 126.8913598); 
 
-					<section>
-						<h4>Lists</h4>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-								<h5>Unordered</h5>
-								<ul>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Sagittis adipiscing.</li>
-									<li>Felis enim feugiat.</li>
-								</ul>
-								<h5>Alternate</h5>
-								<ul class="alt">
-									<li>Dolor pulvinar etiam.</li>
-									<li>Sagittis adipiscing.</li>
-									<li>Felis enim feugiat.</li>
-								</ul>
-							</div>
-							<div class="col-6 col-12-medium">
-								<h5>Ordered</h5>
-								<ol>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Etiam vel felis viverra.</li>
-									<li>Felis enim feugiat.</li>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Etiam vel felis lorem.</li>
-									<li>Felis enim et feugiat.</li>
-								</ol>
-								<h5>Icons</h5>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								</ul>
-							</div>
-						</div>
-						<h5>Actions</h5>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-								<ul class="actions">
-									<li><a href="#" class="button primary">Default</a></li>
-									<li><a href="#" class="button">Default</a></li>
-								</ul>
-								<ul class="actions small">
-									<li><a href="#" class="button primary small">Small</a></li>
-									<li><a href="#" class="button small">Small</a></li>
-								</ul>
-								<ul class="actions stacked">
-									<li><a href="#" class="button primary">Default</a></li>
-									<li><a href="#" class="button">Default</a></li>
-								</ul>
-								<ul class="actions stacked">
-									<li><a href="#" class="button primary small">Small</a></li>
-									<li><a href="#" class="button small">Small</a></li>
-								</ul>
-							</div>
-							<div class="col-6 col-12-medium">
-								<ul class="actions stacked">
-									<li><a href="#" class="button primary fit">Default</a></li>
-									<li><a href="#" class="button fit">Default</a></li>
-								</ul>
-								<ul class="actions stacked">
-									<li><a href="#" class="button primary small fit">Small</a></li>
-									<li><a href="#" class="button small fit">Small</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
+      // 마커를 생성합니다
+      var marker = new kakao.maps.Marker({
+          position: markerPosition
+      });
 
-					<section>
-						<h4>Table</h4>
-						<h5>Default</h5>
-						<div class="table-wrapper">
-							<table>
-								<thead>
-									<tr>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Price</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Item One</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Two</td>
-										<td>Vis ac commodo adipiscing arcu aliquet.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Three</td>
-										<td> Morbi faucibus arcu accumsan lorem.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Four</td>
-										<td>Vitae integer tempus condimentum.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Five</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="2"></td>
-										<td>100.00</td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
+      // 마커가 지도 위에 표시되도록 설정합니다
+      marker.setMap(map);
 
-						<h5>Alternate</h5>
-						<div class="table-wrapper">
-							<table class="alt">
-								<thead>
-									<tr>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Price</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Item One</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Two</td>
-										<td>Vis ac commodo adipiscing arcu aliquet.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Three</td>
-										<td> Morbi faucibus arcu accumsan lorem.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Four</td>
-										<td>Vitae integer tempus condimentum.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Five</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="2"></td>
-										<td>100.00</td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
-					</section>
+      // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+      // marker.setMap(null);    
+      </script>
+    </div>
+    <!-- 오시는 길 -->
 
-					<section>
-						<h4>Buttons</h4>
-						<ul class="actions">
-							<li><a href="#" class="button primary">Primary</a></li>
-							<li><a href="#" class="button">Default</a></li>
-						</ul>
-						<ul class="actions">
-							<li><a href="#" class="button large">Large</a></li>
-							<li><a href="#" class="button">Default</a></li>
-							<li><a href="#" class="button small">Small</a></li>
-						</ul>
-						<ul class="actions fit">
-							<li><a href="#" class="button fit">Fit</a></li>
-							<li><a href="#" class="button primary fit">Fit</a></li>
-							<li><a href="#" class="button fit">Fit</a></li>
-						</ul>
-						<ul class="actions fit small">
-							<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-							<li><a href="#" class="button fit small">Fit + Small</a></li>
-							<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-						</ul>
-						<ul class="actions">
-							<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-							<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-						</ul>
-						<ul class="actions">
-							<li><span class="button primary disabled">Disabled</span></li>
-							<li><span class="button disabled">Disabled</span></li>
-						</ul>
-					</section>
+    <!-- footer ---------------------------------------------------------------------------->
+    <footer class="container-fluid" style="background-color: #424141;">
+      <div class="container" style="color: #eeeeee;padding-top: 50px !important; padding-bottom: 50px !important;">
+        ㈜티아이에스정보시스템 / 티아이에스정보기술교육센터 / 대표이사 : 김휘준<br>
+        사업자등록번호 : 113-86-70392 / 통신판매업신고 : 제2015-서울영등포-0490호<br>
+        수강&입학문의 : 02-2069-1931 / 업무문의 : 02-2069-1930 / 팩스 : 02-2069-1932 / 개인정보책임자 : 이형석<br>
+        
+        <div>
+          (우: 70255) 서울특별시 영등포구 선유로 130 (지번 : 양평동 3가 5-4번지), 에이스하이테크시티3차 2층(교무실 : 212호, 강의실 : 202호, 210호, 211호)
+        </div>    
+        <div>
+          COPYRIGHT © 2013 TIS Information Technology Education Center. All RIGHTS RESERVED.
+        </div>
 
-					<section>
-						<h4>Form</h4>
-						<form method="post" action="#">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-6 col-12-xsmall">
-									<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-								</div>
-								<div class="col-12">
-									<select name="demo-category" id="demo-category">
-										<option value="">- Category -</option>
-										<option value="1">Manufacturing</option>
-										<option value="1">Shipping</option>
-										<option value="1">Administration</option>
-										<option value="1">Human Resources</option>
-									</select>
-								</div>
-								<div class="col-4 col-12-small">
-									<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-									<label for="demo-priority-low">Low</label>
-								</div>
-								<div class="col-4 col-12-small">
-									<input type="radio" id="demo-priority-normal" name="demo-priority">
-									<label for="demo-priority-normal">Normal</label>
-								</div>
-								<div class="col-4 col-12-small">
-									<input type="radio" id="demo-priority-high" name="demo-priority">
-									<label for="demo-priority-high">High</label>
-								</div>
-								<div class="col-6 col-12-small">
-									<input type="checkbox" id="demo-copy" name="demo-copy">
-									<label for="demo-copy">Email me a copy</label>
-								</div>
-								<div class="col-6 col-12-small">
-									<input type="checkbox" id="demo-human" name="demo-human" checked>
-									<label for="demo-human">Not a robot</label>
-								</div>
-								<div class="col-12">
-									<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-								</div>
-								<div class="col-12">
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</div>
-							</div>
-						</form>
-					</section>
-
-					<section>
-						<h4>Image</h4>
-						<h5>Fit</h5>
-						<div class="box alt">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-12"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-							</div>
-						</div>
-						<h5>Left &amp; Right</h5>
-						<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-					</section>
-
-				</div>
-			</section>
-		-->
-
-		<!-- Footer -->
-			<section id="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</section>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+      </div>
+    </footer>
+    <!-- footer -->
+</body>
 </html>
